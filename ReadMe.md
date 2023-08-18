@@ -25,5 +25,5 @@
 8- To connect with local database install xampp 
 
 ![My Image](https://github.com/sahilkhimani/Flask-ChatApp/blob/main/images/github.png)
-
-
+![My Image](https://github.com/sahilkhimani/Flask-chatApp/blob/main/images/google%20cloud%20platform.png
+)
