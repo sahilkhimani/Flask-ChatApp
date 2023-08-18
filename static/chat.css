@@ -1,0 +1,111 @@
+/* html {
+
+} */
+
+body{
+  height: 90vh;
+}
+
+.chat {
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 2% auto;
+  max-width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+  .message-box {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* width: 90%; */
+    /* align-items: stretch; */
+    
+  }
+/* 
+  #newRoom{
+    margin-left: 65%;
+  } */
+
+  .head{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #007BFF;
+  color: #ffffff;
+  font-size: large;
+  border-radius: 25px;
+  margin-bottom: 2%;
+  }
+
+  .head a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .messages {
+    overflow-y: scroll;
+    flex: 1;
+    width: 100%;
+  }
+
+  
+  #message {
+    flex: 1;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    font-size: 1.3em;
+    padding: 0 2% 1% 2%;
+  }
+
+  #dt{
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  
+  #date {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .textBox {
+    display: flex;
+    padding: 10px;
+  }
+
+  .textBox * {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+
+  #message {
+    flex: 1;
+    background: rgb(179, 179, 179);
+  }
+
+  #send-btn {
+    margin-left: 10px;
+    background: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #007BFF;
+  }
+  #send-btn:hover {
+    background: white;
+    color: #007BFF;
+  }
+
+  

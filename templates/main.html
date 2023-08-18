@@ -1,0 +1,135 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+
+    <button type="button" onclick="window.location.href = '/logout';">Logout</button>
+    <br />
+    <a href="/showdata">Show Data</a>
+    <br />
+
+
+    <table>
+        <thead>
+            <tr>First Name</tr>
+            <tr>Last Name</tr>
+            <tr>Email Address</tr>
+            <tr>Contact No</tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr>
+                <td id = fname>{{i[0]}}</td>
+                <td id = lname>{{i[1]}}</td>
+                <td id = email>{{i[2]}}</td>
+                <td id = phone>{{i[3]}}</td>
+                <td id = user>{{i[4]}}</td>
+                <td><button class="edit" type="button">Edit</button></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+    <div id="newFrom">
+
+    </div>
+
+    <script>
+    $(".edit").click(function() {
+    var $row = $(this).closest("tr");    
+    var fname = $row.find("#fname").text(); 
+    var lname = $row.find("#lname").text();
+    var email = $row.find("#email").text();
+    var phone = $row.find("#phone").text();
+    var user = $row.find("#user").text();
+    
+
+    document.getElementById('field1').value = fname;
+    document.getElementById('field2').value = lname;
+    document.getElementById('field3').value = email;
+    document.getElementById('field4').value = phone;
+    document.getElementById('field5').value = user;
+
+
+    document.getElementById('newForm').style.display = "block";
+});
+    </script>
+</body>
+
+</html>
+
+<div id="newForm" style="display:none">
+    <form method="post" action="edited">
+        <div><label>First Name:</label>
+        <input type="text" id="field1"  name="firstname">
+        </div>
+        <div>
+        <label>Last Name:</label>
+        <input type="text" id="field2" name="lastname">
+        </div>
+        <div>
+        <label>Email Address:</label>
+        <input type="email" id="field3" name="emailadd">
+        </div>
+        <div>
+        <label>Contact No:</label>
+        <input type="tel" name="phoneno" id="field4" pattern="[0-9]{4}[0-9]{7}">
+        </div>
+        <div>
+        <label>Username:</label>
+        <input type="text" name="user" id="field5">
+        </div> 
+        <button type ="submit" value = "submit">
+            Submit
+        </button>
+    </form>
+</div>
+ -->
+ {% extends 'base.html' %}
+ {% block content %}
+
+    <button type="button" onclick="window.location.href = '/logout';">Logout</button>
+
+
+    <h2>Hello {{user}}</h2>
+
+    <div class="messages">
+        <input placeholder="Message" id="messageInput" />
+        <button type="submit" onclick="sendMessage()" id="send">Send</button>
+    </div>
+
+
+    <script>
+        const socket = io();
+
+        let messageContainer = document.querySelector(".messages");
+
+        let messageInput = document.getElementById("messageInput");
+
+        function sendMessage(){
+            socket.emit("message", messageInput.value);
+            messageInput.value = ""
+        }
+
+        messageInput.addEventListener("keypress", (e) => {
+            if (e.which === 13) {
+                sendMessage();
+            }
+        })
+
+        socket.on('message', (message) => {
+            let messageElement = document.createElement("p")
+            messageElement.innerText = message
+            messageContainer.appendChild(messageElement)
+        })
+
+    </script>
+
+{% endblock %}

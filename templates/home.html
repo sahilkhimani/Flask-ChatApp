@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="../static/form.css"/>
+
+  <div class="container">
+    <div class="card">
+      <h2>Chat Room</h2>
+      <form method="post" action="/home" class="buttons">
+        <label>Name:</label>
+        <input type="text" name="name" value="{{session['username']}}" placeholder="Your name to display" />
+
+        <label>Room Code:</label>
+        <input type="text" placeholder="Enter Room Code to join chat" name="code" value="{{code}}" />
+
+        <button type="submit" name="join">Join Chat Room</button>
+
+      <button type="submit" name="create">Create a New Chat Room</button>
+
+      <button type="button" onclick="window.location.href = '/logout';">Logout</button>
+
+      <div id="txt">{{message}}</div>
+    </form>
+
+    </div>
+  </div>
+    
+
+{% endblock %}
