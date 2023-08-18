@@ -23,3 +23,6 @@
 	check the linux or macos command on internet
 
 8- To connect with local database install xampp 
+
+![My Image](https://github.com/sahilkhimani/WebScrapping-Project/blob/images/1.png)
+
