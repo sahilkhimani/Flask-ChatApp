@@ -62,6 +62,8 @@ create the new database named "userlogin"
 create the table named detail include these fields
 "first_name[varchar], last_name[varchar], email[varchar], phone[bigint], username[varchar], password[varchar]" 
 
+OR
+you can directly import the userlogin database file (SQL format) given in repository.
 
 <h1>For Google integration</h1>
 First for google integration go to google cloud platform and create the client id and 
