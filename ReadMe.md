@@ -26,7 +26,7 @@ Install xampp for localhost connection with Database
 
 Step No 3:
 Now, you have to create the virtual environment for this project
-	for windows use this command in cmd "py -3 -m venv .venv"
+	for windows use this command in cmd "py -m venv .venv"
    	for linux or macos use this command in terminal "python3 -m venv .venv"
 
 Step No 4:
