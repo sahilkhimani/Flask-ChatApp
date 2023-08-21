@@ -69,7 +69,6 @@ client secret key given in sample image.
 <br />
 <br />
 
-
 ![My Image](https://github.com/sahilkhimani/Flask-chatApp/blob/main/images/google%20cloud%20platform.png
 )
 
@@ -77,6 +76,7 @@ Now, paste these google client id and client secret in google route in app.py fi
 
 <h1>For Github integration</h1>
 For github integration go to your github account and from settings go to developer option and create the client id and client secret key given in sample image.
+<br />
 <br />
 
 ![My Image](https://github.com/sahilkhimani/Flask-ChatApp/blob/main/images/github.png)
