@@ -66,6 +66,7 @@ create the table named detail include these fields
 <h1>For Google integration</h1>
 First for google integration go to google cloud platform and create the client id and 
 client secret key given in sample image.
+<br />
 
 ![My Image](https://github.com/sahilkhimani/Flask-chatApp/blob/main/images/google%20cloud%20platform.png
 )
@@ -74,9 +75,10 @@ Now, paste these google client id and client secret in google route in app.py fi
 
 <h1>For Github integration</h1>
 For github integration go to your github account and from settings go to developer option and create the client id and client secret key given in sample image.
+<br />
 
 ![My Image](https://github.com/sahilkhimani/Flask-ChatApp/blob/main/images/github.png)
 
 Now, paste these client id and client secret in github section in app.py file.
 
-<h1>Congratulations! Now from command prompt run "python app.py" command and follow the given link to run this app</h1>
+<h2>Congratulations! Now from command prompt run "python app.py" command and follow the given link to run this app</h2>
