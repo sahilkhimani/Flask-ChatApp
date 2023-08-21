@@ -67,6 +67,9 @@ create the table named detail include these fields
 First for google integration go to google cloud platform and create the client id and 
 client secret key given in sample image.
 <br />
+<br />
+<br />
+<br />
 
 ![My Image](https://github.com/sahilkhimani/Flask-chatApp/blob/main/images/google%20cloud%20platform.png
 )
