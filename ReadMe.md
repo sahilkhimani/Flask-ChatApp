@@ -83,4 +83,4 @@ For github integration go to your github account and from settings go to develop
 
 Now, paste these client id and client secret in github section in app.py file.
 
-<h2>Congratulations! Now from command prompt run "python app.py" command and follow the given link to run this app</h2>
+<h2>Congratulations! Now from command prompt run "python app.py" command.</h2>
