@@ -1,6 +1,10 @@
 # Chat App
 
 Hey! This is a chat app created with Python Flask.
+
+You can see how this app looks like in given youtube link.
+https://www.youtube.com/watch?v=N4BUsRmNbsg
+
 Languages used in this projects:
 <h2>For Frontend:</h2>
 1- Html
