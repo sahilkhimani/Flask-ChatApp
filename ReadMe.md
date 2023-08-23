@@ -1,4 +1,4 @@
-# Chat App
+#Flask Chat App
 
 Hey! This is a chat app created with Python Flask.
 
