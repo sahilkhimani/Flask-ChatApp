@@ -64,8 +64,8 @@ def index():
 @app.route('/google/')
 def google():
 
-    GOOGLE_CLIENT_ID = '943799903506-j593u1pmp5g55ihh7oqvrhl19564qcht.apps.googleusercontent.com'
-    GOOGLE_CLIENT_SECRET = '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'
+    GOOGLE_CLIENT_ID = 'YOUR GOOGLE CLIENT ID'
+    GOOGLE_CLIENT_SECRET = 'YOUR GOOGLE CLIENT SECRET'
 
     CONF_URL = 'https://accounts.google.com/.well-known/openid-configuration'
     oauth.register(
@@ -95,8 +95,8 @@ def google_auth():
 
 github = oauth.register(
     name='github',
-    client_id='8c627b13b23fd000639e',
-    client_secret='070b682597ef1627a89df3492f3420e913bba421',
+    client_id='YOUR GITHUB CLIENT ID',
+    client_secret='YOUR GITHUB CLIENT SECRET',
     access_token_url='https://github.com/login/oauth/access_token',
     access_token_params=None,
     authorize_url='https://github.com/login/oauth/authorize',
